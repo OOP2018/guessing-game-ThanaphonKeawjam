@@ -27,6 +27,8 @@ public class ThanaphonGame extends NumberGame{
 		long seed = System.nanoTime();
 		Random rand = new Random(seed);
 		secret = rand.nextInt(100) + 1;
+		//show secret number for test
+//		System.out.println(secret);
 		super.setMessage("What secret number?");
 	}
 	
@@ -40,6 +42,10 @@ public class ThanaphonGame extends NumberGame{
 			setMessage("Correct! The value is " + secret);
 			count++;
 			return true;
+		}else if(number < 0 || number > 100){
+			setMessage("The value is between 1 to 100");
+			count++;
+			return false;
 		}else if(number > secret){
 			setMessage("No! Your answer is too large.");
 			count++;
