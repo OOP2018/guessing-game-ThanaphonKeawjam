@@ -28,7 +28,7 @@ public class ThanaphonGame extends NumberGame{
 		Random rand = new Random(seed);
 		secret = rand.nextInt(100) + 1;
 		//show secret number for test
-//		System.out.println(secret);
+	    //System.out.println("secret number " + secret);
 		super.setMessage("What secret number?");
 	}
 	

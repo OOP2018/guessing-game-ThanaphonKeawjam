@@ -10,8 +10,10 @@ public class Main {
 		int upperBound = 100;
 		NumberGame game = new ThanaphonGame(upperBound);
 		GameConsole ui = new GameConsole( );
+		
 		//use for auto guess
 //		GameSolver ui = new GameSolver();
+		
 		int solution = ui.play( game );
 		
 		System.out.println("play() returned "+solution);
