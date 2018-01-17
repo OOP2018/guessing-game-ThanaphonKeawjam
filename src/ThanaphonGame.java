@@ -26,7 +26,7 @@ public class ThanaphonGame extends NumberGame{
 		this.upperBound = upperbound;
 		long seed = System.nanoTime();
 		Random rand = new Random(seed);
-		secret = rand.nextInt(100) + 1;
+		secret = rand.nextInt(upperBound) + 1;
 		//show secret number for test
 	    //System.out.println("secret number " + secret);
 		super.setMessage("What secret number?");
@@ -34,8 +34,8 @@ public class ThanaphonGame extends NumberGame{
 	
 	/**
 	 * Evaluate a user's guess.
-	 * @return true if it correct.
-	 * @return false if it incorrect.
+	 * @param number is value from guess.
+	 * @return true if it correct, false if it incorrect.
 	 */
 	public boolean guess(int number){
 		if(number == secret){
