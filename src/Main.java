@@ -15,16 +15,6 @@ public class Main extends Application{
 	public static void main(String[] args) {
 		launch(args);
 	}
-		// upper limit for secret number in guessing game
-/*		int upperBound = 100;
-		NumberGame game = new ThanaphonGame(upperBound);
-		GameConsole ui = new GameConsole( );
-		
-		int solution = ui.play( game );
-		
-		System.out.println("play() returned " + solution);
-		
-		System.out.println("Count guesses is " + game.getCount()); */
 
 	@Override
 	public void start(Stage stage){

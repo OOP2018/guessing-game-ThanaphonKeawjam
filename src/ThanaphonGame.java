@@ -47,11 +47,11 @@ public class ThanaphonGame extends NumberGame{
 			count++;
 			return false;
 		}else if(number > secret){
-			setMessage("No! Your answer is too large.");
+			setMessage("No! " + number + " is too large.");
 			count++;
 			return false;
 		}else if(number < secret){
-			setMessage("No! Your answer is too small.");
+			setMessage("No! " + number + " is too small.");
 			count++;
 			return false;
 		}

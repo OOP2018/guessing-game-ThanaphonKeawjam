@@ -45,7 +45,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
                <VBox.margin>
-                  <Insets left="260.0" top="25.0" />
+                  <Insets left="286.0" top="25.0" />
                </VBox.margin>
             </Button>
             <Label fx:id="label3" alignment="CENTER" contentDisplay="CENTER" prefHeight="41.0" prefWidth="600.0">
@@ -59,6 +59,21 @@
                   <Font size="21.0" />
                </font>
             </Label>
+            <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#newGame" text="New Game">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="178.0" top="-91.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#exitGame" prefHeight="31.0" prefWidth="48.0" text="Exit">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="370.0" top="-32.0" />
+               </VBox.margin></Button>
          </children>
       </VBox>
    </center>
