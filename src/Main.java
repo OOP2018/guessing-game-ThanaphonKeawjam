@@ -12,10 +12,18 @@ import javafx.stage.Stage;
  */
 public class Main extends Application{
 	
+	/**
+	 * Initialize.
+	 * @param args is use for run Application.
+	 */
 	public static void main(String[] args) {
 		launch(args);
 	}
 
+	/**
+	 * Start Program
+	 * @param stage is stage of Application.
+	 */
 	@Override
 	public void start(Stage stage){
 		try {

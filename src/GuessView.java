@@ -9,27 +9,27 @@ import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 /**
- * A Controller for a window that shows the value of a Counter.
+ * A Controller for a window that shows the value of a Guess.
  * @author Thanaphon Keawjam
  *
  */
-public class CounterView implements java.util.Observer{
-
-	private Stage stage;
+public class GuessView implements java.util.Observer{
+	
+	private Guess guess;
 	private Label label;
-	private NumberGame game;
+	private Stage stage;
 	
 	/**
 	 * Initialize.
-	 * @param game is NumberGame object.
+	 * @param guess is Guess object.
 	 */
-	public CounterView(NumberGame game) {
-		this.game = game;
+	public GuessView(Guess guess) {
+		this.guess = guess;
 		initComponents();
 	}
 	
 	/**
-	 * Create a window for counter view.
+	 * Create a window for guess view.
 	 */
 	public void initComponents() {
 		stage = new Stage();
@@ -43,33 +43,31 @@ public class CounterView implements java.util.Observer{
 		root.getChildren().add(label);
 		Scene scene = new Scene(root);
 		stage.setScene(scene);
-		stage.setTitle("Counter");
+		stage.setTitle("Guess");
 		stage.sizeToScene();
 	}
 	
 	/**
-	 * Run counter view window.
+	 * Run guess view window.
 	 */
 	public void run() {
 		stage.show();
-		displayCount();
+		displayGuess();
 	}
 	
 	/**
-	 * Show count on window.
+	 * Show guess number on window.
 	 */
-	public void displayCount() {
-		label.setText(String.format("%2d", game.getCount()));
+	public void displayGuess() {
+		label.setText(String.format("%2d", guess.getGuess()));
 	}
-	
+
 	/**
-	 * Update displayCount() method.
+	 * Update displayGuess() method.
 	 */
 	@Override
 	public void update(Observable o, Object arg) {
-		displayCount();
+		displayGuess();
 	}
-	
-	
-	
+
 }
